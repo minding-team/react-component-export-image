@@ -32,17 +32,13 @@ const DEFAULT_PDF = {
  * @param  {string} filename
  */
 const saveAs = (uri, filename) => {
-    const link = document.createElement('a');
+    // var image = new Image();
+    // image.src = uri;
 
-    if (typeof link.download === 'string') {
-        link.href = uri;
-        link.target = '_blank';
-        document.body.appendChild(link);
-        link.click();
-        // document.body.removeChild(link);
-    } else {
-        window.open(uri);
-    }
+    // var w = window.open("");
+    // w.document.write(image.outerHTML);
+
+    window.open(uri, '_blank');
 };
 
 /**
