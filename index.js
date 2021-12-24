@@ -32,13 +32,12 @@ const DEFAULT_PDF = {
  * @param  {string} filename
  */
 const saveAs = (uri, filename) => {
-    // var image = new Image();
-    // image.src = uri;
+    var image = new Image();
+    image.src = uri;
 
-    // var w = window.open("");
-    // w.document.write(image.outerHTML);
-
-    window.open(uri, '_blank');
+    var w = window.open("");
+    w.document.write(image.outerHTML);
+    w.document.close();
 };
 
 /**
