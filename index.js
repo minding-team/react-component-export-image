@@ -39,7 +39,7 @@ const saveAs = (uri, filename) => {
         link.target = '_blank';
         document.body.appendChild(link);
         link.click();
-        document.body.removeChild(link);
+        // document.body.removeChild(link);
     } else {
         window.open(uri);
     }
